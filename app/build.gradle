@@ -1,24 +1,4 @@
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 24
-    buildToolsVersion "23.0.3"
-    defaultConfig {
-        applicationId "com.y2.y2q"
-        minSdkVersion 10
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
+apply plugin: 
 dependencies {
     def mobileCenterSdkVersion = '0.3.2'
     compile "com.microsoft.azure.mobile:mobile-center-analytics:${mobileCenterSdkVersion}"
