@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        MobileCenter.start(getApplication(), "f95568ed-81c7-4ba1-b463-506fba68d68f",
+                   Analytics.class, Crashes.class);
         super.onCreate(savedInstanceState);
 
         VolleySingleton.getInstance(this);  //  Just initialize the singleton
